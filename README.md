@@ -6,4 +6,4 @@ The purpose of this repository is to give comprehensive explanation of how to ge
 
 Firstly, download all codes in one folder.
 Secondly, change path names which were based on my PC for loading data and saving outcomes into your PC.
-Thirdly, run two aforementioned matlab codes in order for generating trading signals and conditional daily annualized investment returns.
+Thirdly, run two aforementioned matlab codes respectively to generate trading signals and calculate conditional daily annualized returns on investment.
