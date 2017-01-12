@@ -4,6 +4,6 @@ https://www.researchonline.mq.edu.au/vital/access/manager/Repository/mq:50823;js
 
 The purpose of this repository is to give comprehensive explanation of how to generate trading signals and daily conditional returns expressed on Appendix A(Trading Rule Parameters) of the STW(1999), http://onlinelibrary.wiley.com/doi/10.1111/0022-1082.00163/abstract via actual codes applied to my thesis.
 
-Firstly, download all codes in one folder.
-Secondly, change path names which were based on my PC for loading data and saving outcomes into your PC.
+Firstly, download all codes in one folder in your PC.
+Secondly, Open "My_DOW_Step1_Signal_2016.m" and "My_DOW_Step2_Returns_2016.m" and change path names which were based on my PC for loading data and saving outcomes into your PC.
 Thirdly, run two aforementioned matlab codes respectively to generate trading signals and calculate conditional daily annualized returns on investment.
