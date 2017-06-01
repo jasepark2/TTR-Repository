@@ -27,8 +27,8 @@ T=TT-1;
 N=TT-R+1;
 
 
-%% Part1 SECTION         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%    Part1 SECTION     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
  
 %Settings
@@ -61,6 +61,7 @@ n20=[5,10,14,20,24,30,40,50,60,70,80,90,100,110,120,130,140,150];
 n21=[5,10,15,20,25,30,35,40,50,60,70,80,90,100];
 n22=[2,5,10,15,20,25,30,40,50,75,100,125,150,200,250];
 n23 =[5,10,15,20,25,50,100,150,200,250];
+n24 =[5,10,14,20,24,30,40,50,60,70,100];
  
 index1=[0.5,0.618,0.75,0.786,1.236,1.382];
 index2=[40,45,50,55,60];
@@ -113,7 +114,8 @@ nn20=length(n20);
 nn21=length(n21);
 nn22=length(n22);
 nn23=length(n23);
- 
+nn24=length(n24);
+
 nb1=length(b1);
 nb2=length(b2);
 nc1=length(c1);
@@ -1291,7 +1293,7 @@ totROC=horzcat(NNN,CCC,DDD);
  
 %% RSI, Relative Strength Index
  
-comb=combvec(n13,index4);
+comb=combvec(n24,index4);
 [s m]=size(comb);
  
 % NNN, original rules without logic 
@@ -1738,7 +1740,7 @@ totTEMA=[MA1,MA2];
  
 %% TRIX
  
-COMBI=combvec(n19,index4)'; %change9
+COMBI=combvec(n24,index4)'; %change9
 FIND= find( COMBI(:,1)<COMBI(:,2));
 comb=COMBI(FIND,:);
 [s m]=size(comb);
@@ -2461,10 +2463,10 @@ nonSTW=[pSSS1,pSSS2,pSSS3,pSSS4,pSSS5];
 nonSTW=nonSTW(1:T,:);
 %Total Rules
 SSS =[nonSTW, STW]; %total matrix of Signals
-[m1]=size(nonSTW,2); % nonSTW Rules (m1=20784)
+[m1]=size(nonSTW,2); % nonSTW Rules (m1=21014)
 [m2]=size(STW,2) ;   % STW Rules (m2=7846)
-[m3]=size(SSS,2)    % total Rules (m3=28630) 
- 
+[m3]=size(SSS,2)    % total Rules (m3=28860) 
+
 
 end
 
