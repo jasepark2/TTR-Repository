@@ -1,3 +1,6 @@
+## This code is copied from https://github.com/Boulder-Investment-Technologies/lppls.  
+## This file is to add and test the PINN logic to LPPLS.
+
 from multiprocessing import Pool
 from matplotlib import pyplot as plt
 from numba import njit
